@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests">
+    <test name="All Test Suite">
+        <classes>
+            <class name="tests.ParametrizedTests"/>
+            <class name="tests.SimpleTestNGTests"/>
+            <class name="tests.ParallelTestNGTests"/>
+        </classes>
+    </test>
+</suite>

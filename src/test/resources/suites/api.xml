@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="All Test Suite">
+    <test name="Api Tests">
+        <classes>
+            <class name="api.SimpleApiTests"/>
+        </classes>
+    </test>
+</suite>
