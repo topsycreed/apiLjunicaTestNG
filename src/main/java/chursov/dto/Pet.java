@@ -1,5 +1,7 @@
 package chursov.dto;
 
+import chursov.enums.Status;
+
 import java.util.List;
 
 public class Pet {
@@ -8,7 +10,27 @@ public class Pet {
     private String name;
     private List<String> photoUrls;
     private List<Tag> tags;
-    private String status;
+    private Status status;
+
+    public Pet(long id, Category category, String name, List<String> photoUrls, List<Tag> tags, Status status) {
+        this.id = id;
+        this.category = category;
+        this.name = name;
+        this.photoUrls = photoUrls;
+        this.tags = tags;
+        this.status = status;
+    }
+
+    public Pet(Category category, String name, List<String> photoUrls, List<Tag> tags, Status status) {
+        this.category = category;
+        this.name = name;
+        this.photoUrls = photoUrls;
+        this.tags = tags;
+        this.status = status;
+    }
+
+    public Pet() {
+    }
 
     public long getId() {
         return id;
@@ -30,19 +52,7 @@ public class Pet {
         return tags;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
-    }
-
-        public Pet(long id, Category category, String name, List<String> photoUrls, List<Tag> tags, String status) {
-        this.id = id;
-        this.category = category;
-        this.name = name;
-        this.photoUrls = photoUrls;
-        this.tags = tags;
-        this.status = status;
-    }
-
-    public Pet() {
     }
 }
